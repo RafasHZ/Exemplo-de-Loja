@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('forest2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    position: relative;
+    width: 420px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba( 0, 0, 0, .2);
+    color: #000000;
+    border-radius: 10px;
+    padding: 30px 40px;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.wrapper.active .form-wrapper.sing-in {
+    transform: translateY(-450px);
+}
+
+.wrapper .form-wrapper.sing-up {
+    position: absolute;
+    top: 450px;
+    left: 0;
+}
+
+.wrapper.active .form-wrapper.sing-up {
+    transform: translateY(-450px);
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper h2 {
+    font-size: 26px;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #000000;
+    padding: 25px 50px 25px 25px;
+}
+
+.input-box input::placeholder {
+    color: #000000;
+}
+
+.input-box i {
+    position: absolute;
+    right: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 40px 0 25px;
+}
+
+.remember-forgot label input {
+    accent-color: #000000;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #000000;
+    text-decoration: none; 
+}
+
+.remember-forgot a:hover {
+    transform: scale(105%);
+    text-decoration: underline;  
+}
+
+.wrapper .remember-forgot2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 30px 0 15px;
+}
+
+.remember-forgot2 label input {
+    accent-color: #000000;
+    margin-right: 3px;
+}
+
+.remember-forgot2 a {
+    color: #000000;
+    text-decoration: none; 
+}
+
+.remember-forgot2 a:hover {
+    transform: scale(105%);
+    text-decoration: underline;  
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 50px;
+    background: #000000;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba( 0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ff0000;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: scale(105%)
+}
+
+.wrapper .singUp-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 40px 0 15px;
+}
+
+.singUp-link p a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.singUp-link p a:hover {
+    text-decoration: underline; 
+}
+
+.wrapper .singIn-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.singIn-link p a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.singIn-link p a:hover {
+    text-decoration: underline; 
+}
